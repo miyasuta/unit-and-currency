@@ -1,0 +1,24 @@
+{
+  "name": "unit-and-currency",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-common-content": "^1.2.0",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.9",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-listreport": "cds watch --open listreport/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/listreport"
+  ]
+}
