@@ -1,5 +1,4 @@
 namespace my.bookshop;
-// using { Currency } from '@sap/cds/common';
 using { Currency } from '@sap/cds-common-content';
 
 entity Books {

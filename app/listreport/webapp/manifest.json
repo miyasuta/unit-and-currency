@@ -114,6 +114,7 @@
           "options": {
             "settings": {
               "entitySet": "Books",
+              "initialLoad": "Enabled",
               "variantManagement": "Page",
               "navigation": {
                 "Books": {
