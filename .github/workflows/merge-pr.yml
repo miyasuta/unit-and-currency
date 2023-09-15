@@ -1,4 +1,4 @@
-name: CI/CD Workflow
+name: Merge PR
 
 on:
   pull_request:
