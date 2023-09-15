@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout リポジトリ
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: インストール Node.js
         uses: actions/setup-node@v3
