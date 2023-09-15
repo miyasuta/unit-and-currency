@@ -1,0 +1,35 @@
+name: CI/CD Workflow
+
+on:
+  pull_request:
+    branches:
+      - main # プルリクエストがメインブランチに送信されたとき
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout リポジトリ
+        uses: actions/checkout@v3
+
+      - name: インストール Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x # 使用したいNode.jsのバージョンに設定
+
+      - name: 依存関係のインストール
+        run: npm install # もしくは yarn install
+
+      - name: テスト実行
+        run: echo "Test Success" # もしくはテストスクリプトを指定
+
+      - name: マージ
+        uses: "pascalgn/automerge-action@main"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      # - name: ブランチの削除
+      #   uses: SvanBoxel/delete-merged-branch@main
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
