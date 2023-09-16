@@ -8,4 +8,5 @@ entity Books {
   unit: String(3) @title: 'Unit';
   price: Decimal(13,3) @title: 'Price';
   currency: Currency @title: 'Currency';
+  description: String @title: 'Description';
 }
