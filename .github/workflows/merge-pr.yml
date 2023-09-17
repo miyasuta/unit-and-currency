@@ -22,7 +22,7 @@ jobs:
         run: npm install # もしくは yarn install
 
       - name: テスト実行
-        run: echo "Test Success" # もしくはテストスクリプトを指定
+        run: npm run test
 
       - name: マージ
         uses: "pascalgn/automerge-action@main"
