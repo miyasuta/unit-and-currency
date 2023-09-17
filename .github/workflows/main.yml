@@ -35,4 +35,7 @@ jobs:
         run: npm install -g mbt
 
       - name: Install dependency
-        run: npm install       
+        run: npm install 
+
+      - name: テスト実行
+        run: npm run test              
